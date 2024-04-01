@@ -1,0 +1,106 @@
+
+.review {
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 100px auto;
+    /* background: var(--clr-white); */
+    background: transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s linear;
+    text-align: center;
+ 
+  }
+  .review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  .quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background:hsl(152, 89%, 25%);
+    color: white;
+  }
+  .img-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: hsl(170, 89%, 29%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+  }
+  .author {
+    margin-bottom: 0.25rem;
+    color: white;
+  }
+  .job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color:hsl(172, 78%, 60%);
+    font-size: 1rem;
+  }
+  .info {
+    margin-bottom: 0.75rem;
+    color: aliceblue;
+    opacity: 0.6;
+  }
+  .prev-btn,
+  .next-btn {
+    color: hsl(167, 85%, 31%);
+    font-size:2rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition:  all 0.3s linear;
+    cursor: pointer;
+  }
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: hsl(205, 78%, 60%);
+  }
+  .random-btn {
+    margin-top: 0.5rem;
+    background:  hsl(210, 36%, 96%);
+    color: hsl(206, 70%, 12%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius:0.25rem;
+    transition: all 0.3s linear;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .random-btn:hover {
+    background: hsl(192, 69%, 36%);
+    color:  hsl(205, 86%, 17%);
+  }
+  
+  .icon{
+  font-size: 4rem;
+  color:red;
+  }
