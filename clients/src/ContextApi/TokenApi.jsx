@@ -55,7 +55,7 @@ USER AUTHENTICATION LOGIC
   const userAuthentication = async () => {
     try {
       setIsLoading(true)
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch("https://bakery-clone-mern.vercel.app/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -83,7 +83,7 @@ USER AUTHENTICATION LOGIC
 
   const getProductData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data/product", {
+      const response = await fetch("https://bakery-clone-mern.vercel.app/api/data/product", {
         method: "GET",
       });
 

@@ -11,7 +11,7 @@ const productRoute = require("./Router/product-router");
 // Middleware
 const app = express();
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://bakery-website-liart.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 };
